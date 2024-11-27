@@ -38,16 +38,16 @@ nav {
   color: #fff;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif; /* Poppins for the logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo img {
   height: 50px; /* Adjust the height as needed */
   width: auto;  /* Maintain aspect ratio */
-
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: block;
 }
 
 .menu ul {
