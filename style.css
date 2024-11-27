@@ -1,9 +1,9 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5; /* Light background for a clean, business look */
+  color: #333; /* Dark text for good readability */
 }
 
 a {
@@ -13,8 +13,8 @@ a {
 
 /* Navigation Bar */
 nav {
-  background-color: #2c3e50; /* Dark contrast color */
-  color: #ecf0f1; /* Light grey for readability */
+  background-color: #1c1c1c; /* Dark Gray for a professional look */
+  color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
@@ -29,9 +29,10 @@ nav {
 }
 
 .logo a {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: #ecf0f1;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .menu ul {
@@ -45,13 +46,15 @@ nav {
 }
 
 .menu ul li a {
-  color: #ecf0f1;
-  font-size: 1rem;
-  transition: color 0.3s;
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
 }
 
 .menu ul li a:hover {
-  color: #f39c12; /* Yellow for a business-like, high-contrast effect */
+  color: #00bcd4; /* Accent Blue for hover effect */
 }
 
 /* Hero Section */
@@ -63,49 +66,55 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #333; /* Dark background for high contrast */
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  color: #f39c12; /* Business yellow for a contrast pop */
+  font-size: 4rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 30px;
-  color: #ecf0f1; /* Light grey for contrast */
+  font-weight: 300;
 }
 
 .hero-buttons .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 30px;
   margin: 0 15px;
-  background-color: #3498db; /* Blue with a professional touch */
+  background-color: #00bcd4; /* Accent Blue */
   color: #fff;
-  border-radius: 5px;
   font-size: 1.1rem;
-  transition: background 0.3s;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
 }
 
 .hero-buttons .btn:hover {
-  background-color: #2980b9; /* Darker blue for hover effect */
+  background-color: #008c9e; /* Darker Blue */
+  transform: translateY(-5px); /* Subtle hover effect */
 }
 
 /* Contact Form (Zoho Desk) */
 .contact-form {
   padding: 50px 20px;
-  background-color: #ecf0f1; /* Light grey for a soft background */
+  background-color: #fff;
   text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   margin-top: 50px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #2c3e50; /* Dark contrast for the heading */
+  color: #333;
+  font-weight: 600;
 }
 
 .contact-form iframe {
@@ -118,13 +127,14 @@ nav {
 /* Chat Widget */
 .chat-widget {
   padding: 50px 20px;
-  background-color: #ecf0f1;
+  background-color: #f0f0f0; /* Light gray background for contrast */
   text-align: center;
 }
 
 .chat-widget h2 {
-  font-size: 2.5rem;
-  color: #2c3e50;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
 }
 
 #zsiqwidget {
@@ -136,28 +146,29 @@ nav {
 
 /* Footer */
 footer {
-  background-color: #2c3e50; /* Dark background for contrast */
-  color: #ecf0f1;
-  padding: 20px;
+  background-color: #1c1c1c; /* Dark Gray for footer */
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .social-icons a {
-  color: #ecf0f1;
+  color: #fff;
   margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s;
+  font-size: 1.8rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: #f39c12; /* Yellow for hover effect */
+  color: #00bcd4; /* Accent Blue for social icons */
 }
 
 /* Responsive Design */
@@ -167,11 +178,12 @@ footer {
   }
 
   .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .hero-buttons .btn {
     font-size: 1rem;
+    padding: 10px 20px;
   }
 
   .contact-form iframe {
@@ -190,7 +202,7 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero-content p {
@@ -199,6 +211,7 @@ footer {
 
   .hero-buttons .btn {
     font-size: 0.9rem;
+    padding: 10px 15px;
   }
 
   .contact-form iframe {
