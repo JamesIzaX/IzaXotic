@@ -1,9 +1,9 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 a {
@@ -13,8 +13,8 @@ a {
 
 /* Navigation Bar */
 nav {
-  background-color: #6a1b9a; /* Purple */
-  color: #fff;
+  background-color: #2c3e50; /* Dark contrast color */
+  color: #ecf0f1; /* Light grey for readability */
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
@@ -29,9 +29,9 @@ nav {
 }
 
 .logo a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+  color: #ecf0f1;
 }
 
 .menu ul {
@@ -41,17 +41,17 @@ nav {
 }
 
 .menu ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .menu ul li a {
-  color: #fff;
+  color: #ecf0f1;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .menu ul li a:hover {
-  color: #2196f3; /* Blue */
+  color: #f39c12; /* Yellow for a business-like, high-contrast effect */
 }
 
 /* Hero Section */
@@ -66,42 +66,46 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #f39c12; /* Business yellow for a contrast pop */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
+  color: #ecf0f1; /* Light grey for contrast */
 }
 
 .hero-buttons .btn {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #2196f3; /* Blue */
+  padding: 12px 25px;
+  margin: 0 15px;
+  background-color: #3498db; /* Blue with a professional touch */
   color: #fff;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: background 0.3s;
 }
 
 .hero-buttons .btn:hover {
-  background-color: #0d47a1; /* Darker Blue */
+  background-color: #2980b9; /* Darker blue for hover effect */
 }
 
 /* Contact Form (Zoho Desk) */
 .contact-form {
   padding: 50px 20px;
-  background-color: #fff;
+  background-color: #ecf0f1; /* Light grey for a soft background */
   text-align: center;
   margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #2c3e50; /* Dark contrast for the heading */
 }
 
 .contact-form iframe {
@@ -114,13 +118,13 @@ nav {
 /* Chat Widget */
 .chat-widget {
   padding: 50px 20px;
-  background-color: #f4f4f9;
+  background-color: #ecf0f1;
   text-align: center;
 }
 
 .chat-widget h2 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.5rem;
+  color: #2c3e50;
 }
 
 #zsiqwidget {
@@ -132,8 +136,8 @@ nav {
 
 /* Footer */
 footer {
-  background-color: #6a1b9a; /* Purple */
-  color: #fff;
+  background-color: #2c3e50; /* Dark background for contrast */
+  color: #ecf0f1;
   padding: 20px;
   text-align: center;
 }
@@ -146,28 +150,28 @@ footer {
 }
 
 .social-icons a {
-  color: #fff;
+  color: #ecf0f1;
   margin: 0 10px;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #2196f3; /* Blue */
+  color: #f39c12; /* Yellow for hover effect */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .hero-buttons .btn {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .contact-form iframe {
@@ -186,15 +190,15 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .hero-content p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .hero-buttons .btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .contact-form iframe {
