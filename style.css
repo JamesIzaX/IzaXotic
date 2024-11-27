@@ -146,12 +146,25 @@ nav {
   font-family: 'Poppins', sans-serif; /* Poppins for chat heading */
 }
 
-#zsiqwidget {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+.chat-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ensures the chat button takes up full height of its container */
+  margin-top: 20px; /* Adds a small margin from the top */
 }
+
+#zim-messageWidget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px; /* Limits the max width for better responsiveness */
+  margin: 0 auto; /* Centers the widget horizontally */
+}
+
 
 /* Footer */
 footer {
